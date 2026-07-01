@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafe Bucks - Artisan specialty coffee, fresh daily pastries, and sourdough brunch. Experience the perfect blend of cozy atmosphere and premium taste.">
+    <title>Cafe Bucks | Artisan Coffee & Bakery</title>
+    <!-- Performance hints -->
+    <link rel="preload" as="image" href="assets/hero-coffee.jpg" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <!-- Google Fonts: limited to the weights used most often -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap"></noscript>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link" id="logo">
+                <span class="logo-text">CAFE <span class="accent-text">BUCKS</span></span>
+            </a>
+            
+            <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#specials" class="nav-link">Specials</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#menu" class="search-btn" id="header-search-btn" aria-label="Search Menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="cart-icon-wrapper" id="cart-btn" aria-label="View Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge">2</span>
+                </div>
+                <a href="#menu" class="btn btn-primary btn-nav" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Est. 2024 • Specialty Coffee Roasters</span>
+                    <h1 class="hero-title">Crafted to Perfection, <br><span class="gradient-text">Brewed for You</span></h1>
+                    <p class="hero-description">Discover the rich aromas and hand-roasted flavors at Cafe Bucks. Every cup is brewed with ethically sourced beans and served alongside artisanal, freshly baked pastries in a warm, sophisticated space.</p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary" id="hero-cta-menu">Explore Our Menu</a>
+                        <a href="#about" class="btn btn-secondary" id="hero-cta-story">Our Story</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Organic Arabica</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label">In-house Roasting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg-glow"></div>
+                    <img src="assets/hero-coffee.jpg" alt="Artisanal latte art coffee in a ceramic cup" class="hero-image" id="hero-main-img" fetchpriority="high" decoding="async">
+                    <div class="floating-card glass-card top-right-card">
+                        <i class="fa-solid fa-leaf accent-icon"></i>
+                        <div>
+                            <h4>Sustainably Sourced</h4>
+                            <p>Direct trade beans</p>
+                        </div>
+                    </div>
+                    <div class="floating-card glass-card bottom-left-card">
+                        <i class="fa-solid fa-fire accent-icon"></i>
+                        <div>
+                            <h4>Fresh Batch Roasts</h4>
+                            <p>Roasted every morning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Value Prop Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card" id="feature-beans">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="feature-title">Ethical Sourcing</h3>
+                        <p class="feature-text">We partner directly with family-owned farms globally to source premium organic beans, ensuring fair wages and sustainable harvesting.</p>
+                    </div>
+                    <div class="feature-card" id="feature-roast">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3 class="feature-title">Micro-Batch Roasting</h3>
+                        <p class="feature-text">Our master roasters treat coffee roasting as an art. We roast in micro-batches to lock in the bean's unique, origin-specific notes.</p>
+                    </div>
+                    <div class="feature-card" id="feature-pastry">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <h3 class="feature-title">Artisanal Bakery</h3>
+                        <p class="feature-text">Our bakers rise at dawn. We craft organic sourdough and laminate butter croissants from scratch every day using locally milled grains.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="about-image-side">
+                    <div class="about-frame">
+                        <img src="assets/espresso.jpg" alt="Barista pulling a rich double shot of espresso" class="about-img" id="about-secondary-img" loading="lazy" decoding="async">
+                        <div class="about-experience-badge">
+                            <span class="badge-years">10+</span>
+                            <span class="badge-text">Years of Craft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-side">
+                    <span class="section-subtitle">Our Philosophy</span>
+                    <h2 class="section-title">A Sanctuary for Specialty Coffee Lovers</h2>
+                    <p class="about-para">Cafe Bucks was born out of a desire to create a sanctuary where coffee is celebrated, not rushed. We believe that a great cup of coffee requires patience, precise temperature control, and a dedication to detail.</p>
+                    <p class="about-para text-muted">From the moment the green beans land in our custom drum roaster to the final pour of silky microfoam on your latte, we aim for excellence. Our space is built to inspire—a blend of warm walnut wood, brushed brass, and cozy corners.</p>
+                    
+                    <ul class="about-features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Custom water filtration for optimal flavor extraction</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Precision espresso brewing with La Marzocco equipment</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Weekly cuppings and sensory evaluation workshops</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-commerce / Menu Grid Section -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="menu-header">
+                    <div class="menu-header-left">
+                        <span class="section-subtitle">Premium Selection</span>
+                        <h2 class="section-title">Explore Our Artisan Menu</h2>
+                    </div>
+                    <!-- Visual Menu Filters -->
+                    <div class="menu-filters" id="menu-tabs">
+                        <button class="filter-btn active" data-category="all">All Items</button>
+                        <button class="filter-btn" data-category="coffee">Brews & Espresso</button>
+                        <button class="filter-btn" data-category="bakery">Pastries & Bakery</button>
+                        <button class="filter-btn" data-category="brunch">All-Day Brunch</button>
+                    </div>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div class="menu-grid" id="menu-items-container">
+                    
+                    <!-- Card 1 (Coffee) -->
+                    <div class="menu-card" data-category="coffee">
+                        <div class="menu-card-image-wrapper">
+                            <img src="assets/espresso.jpg" alt="Artisan Double Espresso" class="menu-card-img" loading="lazy" decoding="async">
+                            <span class="menu-item-tag tag-classic">Classic</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="rating-count">(42)</span>
+                            </div>
+                            <h3 class="menu-item-name">Double Crema Espresso</h3>
+                            <p class="menu-item-description">Two shots of our signature house blend with a rich, velvety golden crema and hints of dark cocoa and honey.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$3.50</span>
+                                <button class="btn btn-icon-only" aria-label="Add Double Crema Espresso to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (Bakery) -->
+                    <div class="menu-card" data-category="bakery">
+                        <div class="menu-card-image-wrapper">
+                            <img src="assets/croissant.jpg" alt="Golden Flaky Butter Croissant" class="menu-card-img" loading="lazy" decoding="async">
+                            <span class="menu-item-tag tag-seller">Best Seller</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <h3 class="menu-item-name">Classic French Croissant</h3>
+                            <p class="menu-item-description">Hand-laminated with premium French butter. Flaky and crisp on the outside, light and airy on the inside.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$4.50</span>
+                                <button class="btn btn-icon-only" aria-label="Add Classic French Croissant to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Brunch) -->
+                    <div class="menu-card" data-category="brunch">
+                        <div class="menu-card-image-wrapper">
+                            <img src="assets/avocado-toast.jpg" alt="Sourdough Avocado Toast" class="menu-card-img" loading="lazy" decoding="async">
+                            <span class="menu-item-tag tag-special">Chef's Choice</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <h3 class="menu-item-name">Artisanal Avocado Sourdough</h3>
+                            <p class="menu-item-description">Smashed Hass avocado, heirloom cherry tomatoes, pumpkin seeds, microgreens, and a dash of chili on toasted sourdough.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$12.00</span>
+                                <button class="btn btn-icon-only" aria-label="Add Artisanal Avocado Sourdough to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Coffee - Detailed Styling, No image fallback) -->
+                    <div class="menu-card menu-card-no-img" data-category="coffee">
+                        <div class="menu-card-fallback-decor">
+                            <i class="fa-solid fa-mug-hot fallback-icon"></i>
+                            <span class="menu-item-tag tag-premium">Signature</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="rating-count">(64)</span>
+                            </div>
+                            <h3 class="menu-item-name">Smoked Sea Salt Caramel Latte</h3>
+                            <p class="menu-item-description">House caramel sauce, smoked sea salt flakes, double espresso, and steamed organic whole milk topped with gold dust.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$5.75</span>
+                                <button class="btn btn-icon-only" aria-label="Add Smoked Sea Salt Caramel Latte to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 (Bakery - Detailed Styling, No image fallback) -->
+                    <div class="menu-card menu-card-no-img" data-category="bakery">
+                        <div class="menu-card-fallback-decor">
+                            <i class="fa-solid fa-cookie-bite fallback-icon"></i>
+                            <span class="menu-item-tag tag-vegan">Vegan / GF</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="rating-count">(28)</span>
+                            </div>
+                            <h3 class="menu-item-name">Wild Blueberry Scone</h3>
+                            <p class="menu-item-description">Sweet, crumbly vegan pastry loaded with organic blueberries and finished with a zesty, tart lemon glaze drizzle.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$4.25</span>
+                                <button class="btn btn-icon-only" aria-label="Add Wild Blueberry Scone to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 (Brunch - Detailed Styling, No image fallback) -->
+                    <div class="menu-card menu-card-no-img" data-category="brunch">
+                        <div class="menu-card-fallback-decor">
+                            <i class="fa-solid fa-egg fallback-icon"></i>
+                            <span class="menu-item-tag tag-new">Seasonal</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <div class="menu-card-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="rating-count">(51)</span>
+                            </div>
+                            <h3 class="menu-item-name">Truffled Mushroom Benedict</h3>
+                            <p class="menu-item-description">Two poached eggs, sautéed wild mushrooms, organic truffle oil, and buttery hollandaise served on warm brioche.</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-item-price">$14.50</span>
+                                <button class="btn btn-icon-only" aria-label="Add Truffled Mushroom Benedict to Order">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Promotion Banner -->
+        <section class="promo-section" id="specials">
+            <div class="container">
+                <div class="promo-box glass-card">
+                    <div class="promo-content">
+                        <span class="promo-tag">Limited Time Offer</span>
+                        <h2 class="promo-title">The Morning Ritual Bundle</h2>
+                        <p class="promo-text">Start your day the right way. Get a double espresso and a classic butter croissant for a special curated price. Available every weekday until 10:00 AM.</p>
+                        <div class="promo-deal">
+                            <span class="old-price">$8.00</span>
+                            <span class="new-price">$7.00</span>
+                        </div>
+                        <div class="promo-btn-container">
+                            <a href="#menu" class="btn btn-primary">Grab the Deal</a>
+                        </div>
+                    </div>
+                    <div class="promo-decor">
+                        <div class="glow-ring glow-ring-1"></div>
+                        <div class="glow-ring glow-ring-2"></div>
+                        <i class="fa-solid fa-mug-hot promo-decor-icon animate-float"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="testimonials-header">
+                    <span class="section-subtitle">Patron Stories</span>
+                    <h2 class="section-title">Loved by Coffee Enthusiasts</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Review 1 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Cafe Bucks has completely raised the bar for specialty coffee in the city. Their double espresso has the most incredible notes of honey and chocolate. It's my daily morning ritual."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar gradient-avatar-1">EA</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Ethan Avery</h4>
+                                <span class="user-role">Coffee Enthusiast</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The croissants here are a work of art. The perfect combination of crisp, golden exterior and airy interior. Combined with the calm atmosphere, it's the best remote work spot."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar gradient-avatar-2">SR</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Sophia Rivers</h4>
+                                <span class="user-role">Pastry Critic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Outstanding avocado toast. The microgreens and tomatoes taste unbelievably fresh, and the coffee pairs perfectly. Excellent branding, and the staff are incredibly passionate."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar gradient-avatar-3">LM</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Lucas Mercer</h4>
+                                <span class="user-role">Local Foodie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box glass-card">
+                    <div class="newsletter-decor-blur"></div>
+                    <div class="newsletter-content">
+                        <span class="newsletter-tag">Join The Circle</span>
+                        <h2 class="newsletter-title">Subscribe to the Bucks Gazette</h2>
+                        <p class="newsletter-desc">Receive exclusive details about new micro-lot bean arrivals, private roasting events, and secret weekend pastry creations.</p>
+                        
+                        <form class="newsletter-form" onsubmit="event.preventDefault();">
+                            <div class="input-group">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" placeholder="Your email address" aria-label="Email address for newsletter" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Subscribe</button>
+                        </form>
+                        <p class="newsletter-disclaimer">We value your privacy. Unsubscribe at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-link">
+                    <span class="logo-text">CAFE <span class="accent-text">BUCKS</span></span>
+                </a>
+                <p class="brand-desc">A premium specialty coffee house and bakery dedicated to honoring the crop, roasting in-house, and serving the community.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div class="footer-col links-col">
+                <h4 class="footer-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#specials">Special Offers</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Hours -->
+            <div class="footer-col hours-col">
+                <h4 class="footer-title">Hours</h4>
+                <ul class="footer-hours">
+                    <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 6:00 PM</span></li>
+                    <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                    <li><span class="day">Sunday</span> <span class="time">8:00 AM - 6:00 PM</span></li>
+                    <li class="holiday-note">* Roaster runs daily from 8 AM - 12 PM</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Visit Us</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>428 Artisan Lane, Suite 100<br>North Market, NM 87102</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (505) 555-0192</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@cafebucks.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 Cafe Bucks. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
